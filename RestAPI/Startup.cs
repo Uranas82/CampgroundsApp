@@ -13,6 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Persistence;
 
 namespace RestAPI
 {
@@ -30,6 +31,7 @@ namespace RestAPI
         {
 
             services.AddControllers();
+            services.AddPersistence();
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "RestAPI", Version = "v1" });

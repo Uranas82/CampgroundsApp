@@ -1,4 +1,5 @@
 ﻿using Persistence.Models.ReadModels;
+using Persistence.Models.WriteModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,11 +24,11 @@ namespace Persistence.Repositories
         /// </summary>
         /// <param name="id"></param>
         /// <param name="userId"></param>
-        /// <returns></returns>
+        /// <returns></returns> 
         Task<CampgroundReadModel> GetAsync(Guid id, Guid userId);
 
         Task<int> SaveOrUpdateAsync(CampgroundWriteModel campground);
 
         Task<int> DeleteAsync(Guid id);
-    }
+    }    
 }
