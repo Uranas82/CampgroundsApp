@@ -11,19 +11,3 @@ namespace RestAPI.Clients.FirebaseClient
         Task<SignInResponseModel> SignInAsync(SignInRequestModel user);
     }
 }
-
-namespace RestAPI.Clients.FirebaseClient
-{
-    public class FirebaseClient : IFirebaseClient
-    {
-        public Task<SignInResponseModel> SignInAsync(SignInRequestModel user)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public Task<SignUpResponseModel> SignUpAsync(SignUpRequestModel user)
-        {
-            throw new System.NotImplementedException();
-        }
-    }
-}
